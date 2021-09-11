@@ -1,0 +1,20 @@
+  
+import classes from '../Meals/MealsSummary.module.css';
+
+const MealsSummary = () => {
+  return (
+    <section className={classes.summary}>
+      <h2>Delicious Pizzas, Delivered To You</h2>
+      <p>
+        Choose your favorite pizza from our broad selection 
+        and enjoy hot and fresh pizzas at your place.
+      </p>
+      <p>
+        All our meals are cooked with high-quality ingredients, just-in-time and
+        of course by experienced chefs!
+      </p>
+    </section>
+  );
+};
+
+export default MealsSummary;
