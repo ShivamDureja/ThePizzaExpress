@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ThePizzaExpress/static/css/main.0b735a51.chunk.css",
-    "main.js": "/ThePizzaExpress/static/js/main.6c9bf26b.chunk.js",
-    "main.js.map": "/ThePizzaExpress/static/js/main.6c9bf26b.chunk.js.map",
-    "runtime-main.js": "/ThePizzaExpress/static/js/runtime-main.dcbc1ba5.js",
-    "runtime-main.js.map": "/ThePizzaExpress/static/js/runtime-main.dcbc1ba5.js.map",
-    "static/js/2.9079a186.chunk.js": "/ThePizzaExpress/static/js/2.9079a186.chunk.js",
-    "static/js/2.9079a186.chunk.js.map": "/ThePizzaExpress/static/js/2.9079a186.chunk.js.map",
-    "index.html": "/ThePizzaExpress/index.html",
-    "static/css/main.0b735a51.chunk.css.map": "/ThePizzaExpress/static/css/main.0b735a51.chunk.css.map",
-    "static/js/2.9079a186.chunk.js.LICENSE.txt": "/ThePizzaExpress/static/js/2.9079a186.chunk.js.LICENSE.txt",
-    "static/media/My Pizza.d433c844.jpg": "/ThePizzaExpress/static/media/My Pizza.d433c844.jpg"
+    "main.css": "/FoodOrderApp/static/css/main.aa37673c.chunk.css",
+    "main.js": "/FoodOrderApp/static/js/main.6f804d19.chunk.js",
+    "main.js.map": "/FoodOrderApp/static/js/main.6f804d19.chunk.js.map",
+    "runtime-main.js": "/FoodOrderApp/static/js/runtime-main.2bdd339b.js",
+    "runtime-main.js.map": "/FoodOrderApp/static/js/runtime-main.2bdd339b.js.map",
+    "static/js/2.9079a186.chunk.js": "/FoodOrderApp/static/js/2.9079a186.chunk.js",
+    "static/js/2.9079a186.chunk.js.map": "/FoodOrderApp/static/js/2.9079a186.chunk.js.map",
+    "index.html": "/FoodOrderApp/index.html",
+    "static/css/main.aa37673c.chunk.css.map": "/FoodOrderApp/static/css/main.aa37673c.chunk.css.map",
+    "static/js/2.9079a186.chunk.js.LICENSE.txt": "/FoodOrderApp/static/js/2.9079a186.chunk.js.LICENSE.txt",
+    "static/media/My Pizza.d433c844.jpg": "/FoodOrderApp/static/media/My Pizza.d433c844.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dcbc1ba5.js",
+    "static/js/runtime-main.2bdd339b.js",
     "static/js/2.9079a186.chunk.js",
-    "static/css/main.0b735a51.chunk.css",
-    "static/js/main.6c9bf26b.chunk.js"
+    "static/css/main.aa37673c.chunk.css",
+    "static/js/main.6f804d19.chunk.js"
   ]
 }
