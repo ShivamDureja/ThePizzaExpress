@@ -1,6 +1,6 @@
 # ThePizzaExpress
-Pizza Order App made using react.
+Pizza Order Demo App made using react.
 
-The React App is deployed on site using netlify.
+The App is deployed on site using netlify. You need a click to visit ThePizzaExpress.
 
-Visit : https://foodorderreactapp.netlify.app/
+Link : https://foodorderreactapp.netlify.app/
