@@ -1,47 +1,60 @@
 import classes from "../Meals/AvailableMeals.module.css";
 import Card from "../UI/Card";
 import MealItem from "./MealItem/MealItem";
+import { useEffect, useState } from "react";
 
-const DUMMY_MEALS = [
-  {
-    id: "m1",
-    name: "Margherita (L)",
-    description: " mozzarella cheese, tomato sauce with basil",
-    price: 22.99,
-  },
-  {
-    id: "m2",
-    name: "Grande Italia (L)",
-    description: "Extra Cheese,Black Olives with Green peppers",
-    price: 16.5,
-  },
-  {
-    id: "m3",
-    name: "Garden Party (L)",
-    description: "Healthy...and green...",
-    price: 12.99,
-  },
-  {
-    id: "m4",
-    name: "Chicken BBQ (L)",
-    description: "bbq sauce, mozzarella, chicken & cilantro",
-    price: 18.99,
-  },
-  {
-    id: "m5",
-    name: "Double Spicy Beef (L)",
-    description: "Loaded with spicy beef,red onions with chilli cheese.",
-    price: 19.99,
-  },
-  {
-    id: "m6",
-    name: "Double Pepperoni (L)",
-    description: "a blend of pork, beef, and spices",
-    price: 20.99,
-  },
-];
 const AvailableMeals = () => {
-  const mealsList = DUMMY_MEALS.map((meal) => (
+  const [meals, setMeals] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [httpError, setHttpError] = useState();
+
+  useEffect(() => {
+    const fetchMeals = async () => {
+      const response = await fetch(
+        "https://thepizzaexpress-e954e-default-rtdb.firebaseio.com/meals.json"
+      );
+
+      if (!response.ok) {
+        throw new Error("Something went wrong!");
+      }
+      const responseData = await response.json();
+      const loadedMeals = [];
+
+      for (const key in responseData) {
+        loadedMeals.push({
+          id: key,
+          name: responseData[key].name,
+          description: responseData[key].description,
+          price: responseData[key].price,
+        });
+      }
+      setMeals(loadedMeals);
+      setIsLoading(false);
+    };
+
+    fetchMeals().catch((error) => {
+      setIsLoading(false);
+      setHttpError(error);
+    });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <section className={classes.MealsLoading}>
+        <p>Loading...</p>
+      </section>
+    );
+  }
+
+  if (httpError) {
+    return (
+      <section className={classes.MealsError}>
+        <p>{httpError}</p>
+      </section>
+    );
+  }
+
+  const mealsList = meals.map((meal) => (
     <MealItem
       key={meal.id}
       id={meal.id}
