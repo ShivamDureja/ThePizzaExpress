@@ -1,6 +1,8 @@
 # ThePizzaExpress
-Pizza Order Demo App made using react.
+Pizza Order Demo App made using [react](https://github.com/reactjs).
 
-The App is deployed on site using netlify. You need a click to visit ThePizzaExpress.
+Database used : [Google Firebase](https://github.com/firebase/).
 
-Link : https://foodorderreactapp.netlify.app/
+The App is deployed on site using [netlify](https://github.com/netlify). You need a click to visit [ThePizzaExpress](https://thepizzaexpress.netlify.app/).
+
+Link : https://thepizzaexpress.netlify.app/
