@@ -3,7 +3,8 @@
     items:[],
     totalAmount:0,
     addItem : (items) =>{},
-    removeItem : (id) => {}
+    removeItem : (id) => {},
+    clearCart: () => {}
 });
 
 export default CartContext;
